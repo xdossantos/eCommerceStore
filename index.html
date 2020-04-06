@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - Online Shop | Party Treats </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- I went ahead and downloaded Bootstrap and stored it locally because I have poor connectivity. Bootstrap exists to ensure the HTML page does not look too plain -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/mainstyles.css">
+
+</head>
+
+<body class="container">
+    <!-- Content will go into this container -->
+
+    <header>
+        <!-- Navigation bar begins here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">XDODE Kitchen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navigation bar ends here -->
+    </header>
+
+    <main>
+
+        <!-- A jumbotron begins here -->
+        <div class="jumbotron">
+            <h1 class="display-4">Feeling Hungry?</h1>
+            <p class="lead">Stop staring into your empty fridge and stock up on your favourite snacks using our awesome
+                website.</p>
+            <hr class="my-4">
+            <p>Delivery of food items is available only to customers in Cape Town. </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="" role="button">View food catalogue</a>
+            </p>
+        </div>
+        <!-- A jumbotron ends here -->
+
+        <hr />
+
+        <!-- Here is my catalogue  -->
+        <div class="row">
+
+            <!-- Thumbnails have been added to show a view a small image of the product. -->
+            <div class="col-md-6">
+                <img src="static/images/undraw_Beer_celebration_cefj.png" class="img-thumbnail img-fluid" alt="Beer">
+                <!-- The image has been made responsive using the .img-fluid class in order to make the image scale based on the size of its parent div  -->
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Beverages
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Black Label Beer</h5>
+                        <p class="card-text">An affordable and easy-to-drink beer for the working class man.Often
+                            referred to as the "working class beer" because of its great taste at a even better
+                            price. </p>
+                        <button value="blacklabelbeer" onclick="addItem(this.value)" class="btn btn-primary"
+                            type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <div class="collapse" id="blacklabeldetails">
+                        <div class="card card-body">
+                            Black Label is a Canadian brand of lager distributed by Carling Brewing Company. In several
+                            countries, it is also known as Carling Black Label, and in Sweden, it is known as Carling
+                            Premier.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="static/images/undraw_coffee_break_j3of.png" class="img-thumbnail img-fluid" alt="Coffee cup">
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Coffee
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso on the go</h5>
+                        <p class="card-text">Heading off to a meeting and need a quick shot of caffeine to make sure
+                            you are clear-headed? Our coffees will help. It its cold its free. </p>
+                        <button value="espressoonthego" onclick="addItem(this.value)" class="btn btn-primary"
+                            type="button">
+                            Add to Cart
+                        </button>
+
+
+
+                    </div>
+
+                    <div class="collapse" id="espressodetails">
+                        <div class="card card-body">
+                            Based on a coffee-making method of Italian origin, in which a small amount of nearly boiling
+                            water is forced under pressure (expressed) through finely-ground coffee beans. Our espresso
+                            coffees are made with a wide variety of coffee beans and roasts.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="static/images/undraw_Hamburger_8ge6.png" class="img-thumbnail img-fluid" alt="Beef Burgers">
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Burgers </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bacon Burger</h5>
+                        <p class="card-text">Avocado, bacon, Cheese, beef - a meet lovers delight Order our bacon
+                            burgers for date night if you are too tired to cook. </p>
+                        <button value="baconburger" onclick="addItem(this.value)" class="btn btn-primary" type="button">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                    <div class="collapse" id="burgerdetails">
+                        <div class="card card-body">
+                            This is more than a flat round cake of minced beef grilled and served in a bread
+                            roll…Introducing the xBurger, a hamburger made of exotic ingredients like turkey, tofu and
+                            lamb.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="static/images/undraw_pizza_sharing_wxop.png" class="img-thumbnail img-fluid nostock"
+                    alt="Friends hanging out and having pizza">
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Pizza
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Double-Decker Pizza</h5>
+                        <p class="card-text">Get together with your friends and netflix-and-chill without fighting over
+                            who will have to clean up after wards. If it is cold it is free. </p>
+
+
+                        <button class="btn btn-danger">Out of Stock</button>
+                    </div>
+
+                    <div class="collapse" id="pizzadetails">
+                        <div class="card card-body">
+                            A dish of Italian origin, consisting of a flat round base of dough baked with a topping of
+                            tomatoes and cheese, with added meat and vegetables. Our small pizzas are also available as
+                            sometimes called <em>pizzetta</em>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="static/images/undraw_wine_tasting_30vw.png" class="img-thumbnail img-fluid nostock"
+                    alt="A man tastes wine">
+
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Wines
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">XDODE Merlot</h5>
+                        <p class="card-text">Order in our specially-crafted wines from XDODE's Stellenbosch wine farm.
+                            Our Merlot is world-renowned and especially loved by the Asian markets. </p>
+
+
+                        <button class="btn btn-danger">Out of Stock</button>
+
+
+                    </div>
+                    <div class="collapse" id="merlotdetails">
+                        <div class="card card-body">
+                            Our Merlot is a dark blue-colored wine grape variety, that is used as both a blending grape
+                            and for varietal wines. The name Merlot is diminutive of merle, the French name for the
+                            blackbird, a reference to the color of the grape.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <section>
+
+
+            <div id="#advert1">
+
+                <h5>CEO Position</h5>
+                <p>We are looking for an experienced executive to lead and organise our business</p>
+                <a href="#">Apply</a>
+                <hr>
+            </div>
+
+
+
+        </section>
+
+        <!-- End of Latest Articles Section -->
+
+
+        <!-- Here is a block quote as required by the task -->
+        <blockquote class="blockquote text-right">
+            <p class="mb-0">The food here is so good I don't even cook anymore. I literally order everyday! </p>
+            <footer class="blockquote-footer">Ronald MacDonald, <cite title="Source Title">Student at the University of
+                    Cape Town</cite></footer>
+        </blockquote>
+
+        <hr>
+
+        <h3>Short on cash? - Apply these discounts! </h3>
+        <!-- Here are some discount codes that users can use when they check out. The task required that I add a table  -->
+        <br>
+        <table class="table table-hover">
+            <thead style="background-color: #007bff; color: #ffffff;">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Discount Code</th>
+                    <th scope="col">% Discount </th>
+                    <th scope="col">Expires </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>COVID</td>
+                    <td>10%</td>
+                    <td>10 Feb 2021</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!-- Take note that these discounts can be applied using a text input on the checkout page -->
+        <br>
+
+        <h2>We are always looking for people to hire in our digital team </h2>
+
+        <br>
+
+
+
+    </main>
+
+    <section id="jobsPortal">
+
+
+        <h3 class="accordion active">Senior JavaScript Developer</h3>
+        <div class="panel" style="display: block;">
+            <div id="advert1">
+                <p>We are looking for an experienced developer to lead and organise our development team</p>
+                <a href="#">Apply</a>
+                <hr>
+            </div>
+        </div>
+
+        <h3 class="accordion">Unity 3D Game Developer (Apply now!) </h3>
+        <div class="panel" style="display: block;">
+            <div id="advert2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.</p>
+                <a href="#">Apply</a>
+                <hr>
+            </div>
+        </div>
+
+        <h3 class="accordion">Full-Stack Web Developer</h3>
+        <div class="panel" style="display: block;">
+            <div id="advert3">
+                <p>We are looking for someone to maintain our company webpages and develop/debug new
+                    functionalities. </p>
+                <a href="#">Apply</a>
+                <hr>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer" style="background-color: #e9ecef;text-align: center;">
+        <div>
+            <!-- I have added an external link as required by the task -->
+            <span class="text-muted"> Online Shop | Party Treats - Made with love by <a href="http://xdode.com"
+                    target="_blank">XDODE</a> </span>
+        </div>
+    </footer>
+  
+
+    <script>
+        // This jQuery function controls drop-down menu with the use of an accordion animation style when each section is hovered over, as per the task requirements.
+
+
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("mouseover", function () {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+    <script src="static/js/custom.js">
+    </script>
+
+
+</body>
+
+</html>

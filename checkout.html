@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Checkout - Online Shop | Party Treats </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- I went ahead and downloaded Bootstrap and stored it locally because I have poor connectivity. Bootstrap exists to ensure the HTML page does not look too plain -->
+
+  <link rel="stylesheet" href="static/css/custom.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/mainstyles.css">
+
+</head>
+
+<body class="container">
+  <!-- Content will go into this container -->
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">XDODE Kitchen</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Checkout</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+
+    <!-- Navigation bar ends here -->
+  </header>
+
+  <!-- A jumbotron begins here -->
+  <div class="jumbotron">
+    <!-- Please note that the use of font style on h1-->
+    <h1 class="display-4">Your <b>food</b> is almost on its way! </h1>
+    <p class="lead">Complete the form below and we will be sure to have your item with you in the next hour</p>
+    <hr class="my-4">
+    <p>Please note that <b><em>due to Coronavirus customers will only get their orders sometime in the future </em></b>
+    </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#cartSummary" role="button">Review form</a>
+    </p>
+  </div>
+
+  <main>
+
+    <div class="basket">
+      <div class="basket-module">
+        <h3>Enter a promotional code</h3>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Category</li>
+        </ul>
+      </div>
+
+      <section id="checkoutTable">
+      </section>
+
+    </div>
+
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">0</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <p>
+            Select Collection or Delivery
+          </p>
+          <select id="delivery-collection" class="summary-delivery-selection" onchange="updateQuantities()">
+            <option value="collection">Collection (Free) </option>
+            <option value="Delivery">Delivery - (R50)</option>
+          </select>
+        </div>
+
+        <div class="summary-total">
+          <div class="total-title">VAT</div>
+          <div class="total-value final-value" id="basket-vat">0</div>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">0</div>
+        </div>
+        <div class="summary-checkout">
+          <button onclick="generateOrderCode()" class="checkout-cta">Confirm Order</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <hr>
+
+  <footer class="footer" style="background-color: #e9ecef;text-align: center;">
+    <div>
+      <!-- I have added an external link as required by the task -->
+      <span class="text-muted"> Online Shop | Party Treats - Made with love by <a href="http://xdode.com"
+          target="_blank">XDODE</a> </span>
+    </div>
+  </footer>
+
+  <!-- I went ahead and downloaded JavaScript Files needed for this project and stored them locally because I have poor connectivity. -->
+
+  <script src="static/js/jquery-3.4.1.js">
+  </script>
+
+
+  <!-- Custom JavaScript -->
+
+  <script src="static/js/custom.js">
+  </script>
+
+</body>
+
+</html>
