@@ -16,6 +16,11 @@ Installation
 
 Simply clone the project to your local repository and click the index.html file located in the root folder. All files are static. This project requires no opinionated envoronments to run, only an internet connection for any access to CDNs. 
 
+app/
+├── static/
+├── checkout.html
+└── index.html
+
 Credits 
 
 Xola dos Santos. Technology entreprenuer and owner at xdode.com
